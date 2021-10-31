@@ -1,4 +1,4 @@
-import { resolve } from 'path';
+const path = require('path');
 
 export const mode = 'production';
 export const entry = './js/dashboard_main.js';
