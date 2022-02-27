@@ -14,3 +14,18 @@ interface Directors extends Teacher {
 interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
+
+function printName(firstName: string, lastName: string) {
+  return `${firstName.charAt(0)}. ${lastName}`;
+}
+
+export const printTeacher: printTeacherFunction = printName;
+
+class StudentClass {
+  firstName: string;
+  lastName: string;
+
+  constructor(firstName: string, lastName: string) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
